@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*
+Mobile First
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 345px;
+    margin: 0 auto;
+    display: inline;
+    
+}
+
+
+/* HEADeR / CABEÇALHO*/
+header {
+    max-width: 100%;
+    max-height: 70px;
+    background-color: #26140A;
+    padding: 0 30px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.cabecalho .cabecalho__logo img {
+    max-width: 60px;
+    max-height: 60px;
+
+
+}
+
+.cabecalho .cabecalho__menu img {
+    display: flex;
+    max-width: 30px;
+    max-height: 30px;
+
+}
+.cabecalho__menuLista{
+    display: none;
+}
+
+/*SECAO HERO*/
+
+
+.item-hero {
+    background: url(../imgMobile/Hero/hamburguer-background-desktop.png ) center center no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 131px 33px;
+}
+
+.item-hero__titulo {
+    font-size: 29px;
+    font-weight: bolder;
+    color: #e4ff14;
+}
+
+.item-hero__paragrafo {
+    color: white;
+    width: 400px;
+    height: 114.69px;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    font-style: normal;
+    line-height: 25px;
+}
+
+.item-hero__btn button {
+    background-color: #f29f05;
+    border: none;
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    padding: 15.5px 55px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.item-hero__btn button:hover {
+    background-color: #f8b943;
+    transition: all 0.1s;
+}
+
+/*
+APRESENTAÇÃO
+*/
+
+.apresentacao--produtos {
+    background-color: #97bf04;
+    max-width: 100%;
+    max-height: auto;
+    height: 1340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.apresentacao__titulo h1 {
+    color: white;
+    font-size: 36px;
+    margin: 60px 49px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.apresentacao__img img {
+    max-width: 160px;
+    max-height: 160px;
+    height: 160px;
+    margin: 60px 0 0;
+
+}
+
+.apresentacao__img img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.1s;
+}
+
+.apresentacao__descricaoProduto {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+}
+
+.apresentacao__paragrafo {
+    width: 299px;
+    height: 88.55px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/*
+PRODUCTS / PRODUTOS
+*/
+
+.secaoProdutos {
+    max-width: 100%;
+    height: auto;
+    background-color: #fe790c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secaoProdutos__titulo h1 {
+    color: #fff;
+    margin: 30px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.secaoProdutos__caixa {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 328px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0px 25px 30px;
+    padding: 30px 35px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.319);
+    cursor: pointer;
+}
+
+.secaoProdutos__caixa__imgProduto img {
+    margin: 0 0 15px;
+
+}
+
+.secaoProdutos__caixa__titulo h1 {
+    font-size: 21px;
+    margin: 15px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.secaoProdutos__caixa__descricao p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 0 0 15px;
+}
+
+.secaoProduto__caixa__preco span {
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*FOOTER / CABECALHO*/
+
+.rodape {
+    background-color: #26140A;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: 194px;
+}
+
+.rodape ul {
+    list-style: none;
+
+}
+
+.rodape ul a {
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
+
+.rodape__redesSociais li {
+    display: inline;
+    flex-direction: row;
+}
+
+.rodape__redesSociais li a img {
+    margin: 30px 10px 0px 0;
+    width: 40px;
+    height: 40px;
+}
+
+.rodape__info ul li{
+    margin: 15px 0;
+}
+
+@media only screen and (min-width: 900px) {
+    /*
+    CABEÇALHO - 900px
+    */
+    .container {
+        max-width: 70%;
+        margin: 0 auto;
+        
+    }
+
+        .cabecalho__menuLista{
+        display: flex;
+        margin-left: auto;
+    }
+    .cabecalho__menuLista ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .cabecalho__menuLista ul li a{
+        text-decoration: none;
+        margin: 10px;
+        color: white;
+        
+    }
+    .cabecalho__menuLista ul li{
+        list-style: none;
+    }
+    .cabecalho__menuLista ul li a:hover{
+        text-decoration: underline;
+    }
+    .cabecalho__menu img {
+        margin-left: 30px;
+    }
+
+    /*
+    SECÇÃO HERO - 900px
+    */
+
+    .item-hero {
+        align-items: flex-start;
+        padding: 130px 135px;
+    }
+    .item-hero__paragrafo {
+        text-align: start;
+    }
+    .item-hero__btn button{
+        margin-top: 0px;
+    }
+
+    /*
+    APRESENTAÇÃO PRODUTO
+    */
+   
+
+    /*
+    SECAO PRODUTO
+    */
+
+    /*
+    FOOTER / RODAPE
+    */
+
+    
+    .container .rodape{
+        max-width: 70%;
+        margin: 0 ;
+    }
+    .rodape{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .rodape__redesSociais ul {
+        margin: auto;
+    }
+    
+    .rodape__info ul li{
+        margin: 0 auto;
+        
+    }
+
+   
+}
